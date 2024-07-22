@@ -1,0 +1,262 @@
+.iphone-1313-pro-10 .li {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.iphone-1313-pro-10 .ber {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  overflow-wrap: break-word;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.iphone-1313-pro-10 .ty {
+  position: absolute;
+  left: 2px;
+  bottom: 0px;
+  overflow-wrap: break-word;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.iphone-1313-pro-10 .component-1 {
+  position: relative;
+  margin-right: 27.5px;
+  padding: 0 2px;
+  width: 70px;
+  height: 79px;
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .container-4 {
+  margin: 29.5px 0 33px 0;
+  overflow-wrap: break-word;
+  font-family: 'SFT Schrifted Sans TRIAL', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+.container-4-sub132 {
+  font-family: 'SFT Schrifted Sans TRIAL', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.333;
+}
+.container-4 {
+  font-family: 'SFT Schrifted Sans TRIAL', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.333;
+}
+.iphone-1313-pro-10 .container {
+  margin: 0 3px 53px 3px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .group-3 {
+  margin: 0 21.1px 17px 0;
+  width: 195.9px;
+  height: 121px;
+}
+.iphone-1313-pro-10 .container-5 {
+  margin-bottom: 70px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+.iphone-1313-pro-10 .ellipse-2 {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 1px 0;
+  width: 10px;
+  height: 10px;
+}
+.iphone-1313-pro-10 .ellipse-3 {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 1px 0;
+  width: 10px;
+  height: 10px;
+}
+.iphone-1313-pro-10 .ellipse-4 {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 1px 0;
+  width: 10px;
+  height: 10px;
+}
+.iphone-1313-pro-10 .ellipse-5 {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 1px 0;
+  width: 10px;
+  height: 10px;
+}
+.iphone-1313-pro-10 .ellipse-1 {
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+  width: 12px;
+  height: 12px;
+}
+.iphone-1313-pro-10 .frame-23 {
+  margin-left: 1px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  width: 72px;
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .frame-15 {
+  border-radius: 30px;
+  background: radial-gradient(50% 50% at 50% 50%, #383838 0%, #2B2B2B 100%);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 27px 25px 27px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .container {
+  margin-bottom: 2px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'SFT Schrifted Sans TRIAL', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.iphone-1313-pro-10 .momfit {
+  margin-left: 8.6px;
+  overflow-wrap: break-word;
+  font-family: 'SFT Schrifted Sans TRIAL', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 16px;
+  color: #CFCFCF;
+}
+.iphone-1313-pro-10 .frame-16 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .container-1 {
+  margin: 8px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'SFT Schrifted Sans TRIAL', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+}
+.iphone-1313-pro-10 .frame-17 {
+  margin: 0 2.5px 0 7.2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 9.7px);
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .frame-18 {
+  margin: 0 0 52px 3px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 3px);
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .petuh-151 {
+  background: url('../assets/images/petuh_151.jpeg') 50% / cover no-repeat;
+  position: absolute;
+  left: 0px;
+  top: -34px;
+  right: 0px;
+  bottom: -79px;
+  height: 100%;
+}
+.iphone-1313-pro-10 .frame-181 {
+  border-radius: 30px;
+  background: #2B2B2B;
+  position: relative;
+  width: 335px;
+  height: 335px;
+}
+.iphone-1313-pro-10 .frame-151 {
+  border-radius: 30px;
+  background: #2B2B2B;
+  margin-bottom: 15px;
+  display: flex;
+  width: 335px;
+  height: 335px;
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .container-2 {
+  margin-bottom: 2px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'SFT Schrifted Sans TRIAL', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.iphone-1313-pro-10 .momfit-1 {
+  margin-left: 8.6px;
+  overflow-wrap: break-word;
+  font-family: 'SFT Schrifted Sans TRIAL', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 16px;
+  color: #CFCFCF;
+}
+.iphone-1313-pro-10 .frame-161 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .container-3 {
+  margin: 8px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'SFT Schrifted Sans TRIAL', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+}
+.iphone-1313-pro-10 .frame-171 {
+  margin: 0 2.5px 0 7.2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 9.7px);
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 .frame-19 {
+  margin-right: 3px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 3px);
+  box-sizing: border-box;
+}
+.iphone-1313-pro-10 {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 33.5px 25px 0 27px;
+  box-sizing: border-box;
+}
