@@ -19,8 +19,8 @@
         </div>
       </div>
       <div class="frame-16">
-        <div class="container">
-        Шмотка #1
+        <div class="container" id="item">
+        
         </div>
         <span class="momfit">
         Прекрасные джинсы Momfit
@@ -34,8 +34,8 @@
       <div class="line-3">
       </div>
       <div class="container">
-        <div class="container-1">
-        45$
+        <div class="container-1" id="sale">
+        
         </div>
         <div class="frame-21">
           <span class="container-2">
@@ -45,5 +45,18 @@
         </div>
       </div>
     </div>
+    <script>
+      setTimeout(function() {
+      var paramsString = document.location.search; // ?page=4&limit=10&sortby=desc  
+      var searchParams = new URLSearchParams(paramsString);
+    
+      let ite = searchParams.get("item"); // 4
+      let fa = searchParams.get("sale"); // d
+      let itema = document.getElementById("item");
+      let rty = document.getElementById("sale");
+      itema.innerText = `Шмотка #${ite}`;
+      rty.innerText = `${fa}$`;
+    }, 500);
+    </script>
   </body>
 </html>
