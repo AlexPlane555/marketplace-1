@@ -11,10 +11,10 @@
     width:227px ;
     height:56px;
     position:absolute;
-	    left:22%;
+	    left:20%;
       top: 25%;
   }
   .imgs{
-    height: 56px; /* for Demo only */
+    height: 56px; 
     position: relative;
   }
