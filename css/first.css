@@ -7,3 +7,14 @@
     text-transform: uppercase;
     color: #000000;
   }
+  .imgpart {
+    width:227px ;
+    height:56px;
+    position:absolute;
+	    left:22%;
+      top: 25%;
+  }
+  .imgs{
+    height: 56px; /* for Demo only */
+    position: relative;
+  }
