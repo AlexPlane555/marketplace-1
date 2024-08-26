@@ -14,6 +14,52 @@
 
     </div>
     <script>
+       setTimeout(function() {
+      const containers = document.querySelectorAll('.container-5'); // Получаем все контейнеры с классом 'container-5'
+
+containers.forEach(container => {
+  const N = container.children.length; // Количество детей в контейнере
+  let i = 0, x0 = null, locked = false;
+
+  function unify(e) { return e.changedTouches ? e.changedTouches[0] : e };
+
+  function lock(e) {
+    x0 = unify(e).clientX;
+    container.classList.toggle('smooth', !(locked = true));
+  };
+
+  function drag(e) {
+    e.preventDefault();
+    if (locked) {
+      container.style.setProperty('--tx', `${Math.round(unify(e).clientX - x0)}px`);
+    }
+  };
+
+  function move(e) {
+    if (locked) {
+      let dx = unify(e).clientX - x0, s = Math.sign(dx) * -1;
+
+      if ((i > 0 && s < 0) || (i < N - 1 && s > 0)) {
+        container.style.setProperty('--i', i += s);
+      }
+      container.style.setProperty('--tx', '0px');
+      container.classList.toggle('smooth', !(locked = false));
+      x0 = null;
+    }
+  };
+ 
+  container.style.setProperty('--n', N); // Устанавливаем значение --n для каждого контейнера
+  container.style.setProperty('--img-width', `${100}%`); // Устанавливаем width для img
+  container.addEventListener('mousedown', lock, false);
+  container.addEventListener('touchstart', lock, false);
+
+  container.addEventListener('mousemove', drag, false);
+  container.addEventListener('touchmove', drag, false);
+
+  container.addEventListener('mouseup', move, false);
+  container.addEventListener('touchend', move, false);
+});
+}, 500); 
       const sales = ["45", "20","100", "15"]
         function addHtmlFile(containerId, htmlFilePath, idelement) {
       // Получаем контейнер

@@ -10,10 +10,16 @@
   <body>
     <div class="iphone-1313-pro-11">
       <div class="frame-20">
+       
         <div class="petuh-141">
+          <img src='https://images.unsplash.com/photo-1514117445516-2ecfc9c4ec90?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=0e0b58fcf67fa6e8a010322d617e39af' alt='Mountain massif, sunbathed, partly covered in show.'/>
+	<img src='https://images.unsplash.com/photo-1510325805092-2951ab330b7d?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=017cf46443f4821a375c20e8c68e37f0' alt='Tiny bird with pale brown, orange and white feathers in an evergreen tree.'/>
+  <img src='https://images.unsplash.com/photo-1514848567240-a81cb051807a?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=3a0e476ab712db0eb68ab121a21c54de' alt='Close-up of yellow rose opening up.'/>
+	<img src='https://images.unsplash.com/photo-1465408522361-a6f502298219?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=7a6bd1244c42d1dbd3984a4c13981666' alt='Fast and foamy creek in the middle of the forest.'/>
+	<img src='https://images.unsplash.com/photo-1503843778847-2b8bdce2ed3d?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ&amp;s=d547781176ce182eeeb7303bac05abf4' alt='Fluffy little tabby with blue eyes climbing up a tree.'/>
         </div>
         <div class="frame-22">
-          <span class="container-4">
+          <span class="container-4" id="indicator">
           1/4
           </span>
         </div>
@@ -46,6 +52,58 @@
       </div>
     </div>
     <script>
+      const _C = document.querySelector('.petuh-141'), 
+      N = _C.children.length;
+
+      let i = 0, x0 = null, locked = false;
+      setTimeout(function() {
+      let indicator = document.getElementById("indicator");
+      indicator.innerText = `${i + 1}/${_C.children.length}`;
+    }, 500);
+      
+function unify(e) {	return e.changedTouches ? e.changedTouches[0] : e };
+
+function lock(e) {
+  x0 = unify(e).clientX;
+	_C.classList.toggle('smooth', !(locked = true))
+  indicator.innerText = `${i + 1}/${_C.children.length}`;
+};
+ 
+function mouseupcheck(e) {
+  indicator.innerText = `${i + 1}/${_C.children.length}`;
+}
+
+function drag(e) {
+	e.preventDefault();
+	
+	if(locked) 		{
+		_C.style.setProperty('--tx', `${Math.round(unify(e).clientX - x0)}px`)
+    
+  }
+};
+
+function move(e) {
+  if(locked) {
+    let dx = unify(e).clientX - x0, s = Math.sign(dx);
+    
+    if((i > 0 || s < 0) && (i < N - 1 || s > 0))
+    
+      _C.style.setProperty('--i', i -= s);
+    _C.style.setProperty('--tx', '0px');
+    _C.classList.toggle('smooth', !(locked = false));
+    x0 = null
+  }
+};
+
+_C.style.setProperty('--n', N);
+_C.addEventListener('mousedown', lock, false);
+_C.addEventListener('touchstart', lock, false);
+
+_C.addEventListener('mousemove', drag, false);
+_C.addEventListener('touchmove', drag, false);
+
+_C.addEventListener('mouseup', move, false);
+_C.addEventListener('touchend', move, false);
       setTimeout(function() {
       var paramsString = document.location.search; // ?page=4&limit=10&sortby=desc  
       var searchParams = new URLSearchParams(paramsString);
@@ -57,6 +115,9 @@
       itema.innerText = `Шмотка #${ite}`;
       rty.innerText = `${fa}$`;
     }, 500);
+    
+
+    
     </script>
   </body>
 </html>

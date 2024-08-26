@@ -1,10 +1,36 @@
+* { margin: 0 }
+
+html, body {
+  /* Убирает прокрутку по горизонтали, для мобильной версии */
+  overflow-x: hidden;
+}
+
 .iphone-1313-pro-11 .petuh-141 {
-  background: url('../assets/images/petuh_141.jpeg');
-  position: absolute;
-  top: -28px;
-  right: -29px;
-  width: 448px;
-  height: 450px;
+  --n: 0;
+	display:flex;
+  flex-direction:row;
+	align-items: center;
+  position:absolute;
+  top: -13px;
+  left: 0px;
+  /*width: 600px;*/
+  height: 226px;
+  width: calc(var(--n)*100%);
+  margin: 60px auto;
+  transform: translate(calc(var(--tx, 0px) + var(--i, 0)/var(--n)*-100%));
+  img{
+
+    width: calc(100%/var(--n));
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+}
+.smooth { transition: transform .5s ease-out; }
+.iphone-1313-pro-11 .slide {
+  position: relative;
+  
 }
 .iphone-1313-pro-11 .container-4 {
   overflow-wrap: break-word;
@@ -25,13 +51,13 @@
   box-sizing: border-box;
 }
 .iphone-1313-pro-11 .frame-20 {
-  background: #9D8D8D;
+  /*background: #9D8D8D;*/
   position: relative;
   margin-bottom: 32px;
   display: flex;
-  padding: 346px 21px 33px 21px;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 244px 21px 33px 21px;
+
+  
 }
 .iphone-1313-pro-11 .container {
   margin: 0 12.2px 5px 12.2px;

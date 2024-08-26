@@ -71,15 +71,54 @@
   width: 195.9px;
   height: 121px;
 }
+.iphone-1313-pro-10 .rt5 {
+
+  position:absolute;
+  
+}
+html, body {
+  /* Убирает прокрутку по горизонтали, для мобильной версии */
+  overflow-x: hidden;
+}
+.iphone-1313-pro-10 .tr {
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+  top: -140px;
+  left: -23%;
+  width: 135%;
+}
+
 .iphone-1313-pro-10 .container-5 {
-  margin-bottom: 70px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 32px;
-  color: #FFFFFF;
+  /* --n: 1; - Удаляем, так как он будет динамически задаваться */
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  left: -79px;
+  top: -140px;
+  /* transform: translate(calc(var(--tx, 0px) + var(--i, 0)/var(--n)*-100%)); - Изменяем, чтобы использовать локальное значение --n */
+  transform: translate(calc(var(--tx, 0px) + var(--i, 0) * -100%));
+
+  /* Добавляем переходы для плавности */
+  transition: transform 0.3s ease; /* Изменяем время и функцию перехода по вкусу */
+
+  img {
+    /* width: calc(100%/var(--n)); - Удаляем, так как он будет динамически задаваться */
+    /* width: 400px; - Удаляем, так как он будет динамически задаваться */
+    width: var(--img-width);
+    height: 300px;
+    object-fit: cover;
+    top: 0%;
+    left: 0px;
+  }
+}
+
+/* Стиль для состояния smooth */
+.iphone-1313-pro-10 .container-5.smooth {
+  /* Добавляем стиль smooth для плавного перехода */
+  transition: transform 0.5s ease; /* Изменяем время и функцию перехода по вкусу */
 }
 .iphone-1313-pro-10 .ellipse-2 {
   border-radius: 5px;
@@ -116,22 +155,25 @@
   height: 12px;
 }
 .iphone-1313-pro-10 .frame-23 {
+  position: relative;
+  z-index: 10;
   margin-left: 1px;
   display: flex;
   flex-direction: row;
   column-gap: 5px;
   width: 72px;
   box-sizing: border-box;
+  top: 100px;
+  right: -35%;
 }
 .iphone-1313-pro-10 .frame-15 {
-  border-radius: 30px;
-  background: radial-gradient(50% 50% at 50% 50%, #383838 0%, #2B2B2B 100%);
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  
+  background-image: url("images\Frame1171276766.png");
   align-items: center;
   padding: 12px 27px 25px 27px;
   width: 100%;
+  margin: 130px auto;
   box-sizing: border-box;
 }
 .iphone-1313-pro-10 .container {
@@ -175,6 +217,7 @@
   box-sizing: border-box;
 }
 .iphone-1313-pro-10 .frame-18 {
+  background-image: url("images\Frame1171276766.png");
   margin: 0 0 52px 3px;
   display: flex;
   flex-direction: column;
